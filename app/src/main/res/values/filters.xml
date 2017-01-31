@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_array">
+        <item value="New">Newest</item>
+        <item value="Old">Oldest</item>
+    </string-array>
+    <string-array name="category_array_text">
+        <item name="arts">Arts</item>
+        <item name="finance">Finance</item>
+        <item name="sports">Sports</item>
+    </string-array>
+    <string-array name="category_array_values">
+        <item>arts</item>
+        <item>finance</item>
+        <item>sports</item>
+    </string-array>
+</resources>
