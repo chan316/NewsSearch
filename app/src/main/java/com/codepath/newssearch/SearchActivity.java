@@ -1,7 +1,9 @@
 package com.codepath.newssearch;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -14,6 +16,7 @@ import android.widget.Toast;
 
 import com.codepath.newssearch.adapter.ArticleAdapter;
 import com.codepath.newssearch.model.Article;
+import com.codepath.newssearch.model.SearchFilter;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -21,13 +24,14 @@ import com.loopj.android.http.RequestParams;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cz.msebera.android.httpclient.Header;
 
-public class SearchActivity extends AppCompatActivity implements SearchFilterFragment.SearchFilterDialogListener {
+public class SearchActivity extends AppCompatActivity implements SearchFilterDialogFragment.SearchFilterDialogListener {
 
     private static final String LOG_TAG = SearchActivity.class.getName();
 
@@ -38,8 +42,13 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterFra
     private RecyclerView rwArticleGrid;
     private RecyclerView.Adapter adapter;
 
+    private SearchFilter searchFilter;
+
+    final boolean HAS_NETWORK = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        searchFilter = new SearchFilter();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -55,12 +64,14 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterFra
     }
 
     private void setQuery(String query) {
-        this.query = query;
+        this.searchFilter.setQuery(query);
     }
 
     public String getQuery() {
-        return this.query;
+        return this.searchFilter.getQuery();
     }
+
+    public SearchFilter getSearchFilter() { return this.searchFilter; }
 
 
     @Override
@@ -78,7 +89,12 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterFra
             public boolean onQueryTextSubmit(String query) {
                 // perform query here
                 setQuery(query);
-                refreshArticle(query);
+
+                if (HAS_NETWORK) {
+                    refreshArticle(query);
+                } else {
+                    refreshArticleOffline(query);
+                }
                 // workaround to avoid issues with some emulators and keyboard devices firing twice if a keyboard enter is used
                 // see https://code.google.com/p/android/issues/detail?id=24599
                 searchView.clearFocus();
@@ -91,17 +107,6 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterFra
             }
         });
 
-        /*
-        MenuItem filterItem = menu.findItem(R.id.miFilterButton);
-        filterItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                SearchFilterFragment dialog = new SearchFilterFragment();
-                dialog.show(getFragmentManager(), "dialog");
-                return true;
-            }
-        });
-        */
         return true;
 
     }
@@ -111,27 +116,21 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterFra
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.miFilterButton:
-                SearchFilterFragment dialog = new SearchFilterFragment();
-                dialog.show(getSupportFragmentManager(), "dialog");
-
+                showSearchFilterDialog();
                 return true;
         }
-        Toast.makeText(this, "OPTIONS SELECTED " + item.getItemId(), Toast.LENGTH_SHORT).show();
         return super.onOptionsItemSelected(item);
     }
 
-    /*
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        MenuItem actionViewItem = menu.findItem(R.id.miActionButton);
-        // Retrieve the action-view from menu
-        View v = MenuItemCompat.getActionView(actionViewItem);
-        // Find the button within action-view
-        Button b = (Button) v.findViewById(R.id.btnCustomAction);
-        // Handle button click here
-        return super.onPrepareOptionsMenu(menu);
+    private void showSearchFilterDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("searchFilter", Parcels.wrap(searchFilter));
+
+        SearchFilterDialogFragment searchFilterDialogFragment = SearchFilterDialogFragment.newInstance(bundle);
+        searchFilterDialogFragment.show(getSupportFragmentManager(), "dialog");
+
     }
-    */
 
     private void refreshArticle(final String searchText) {
         AsyncHttpClient client = new AsyncHttpClient();
@@ -167,15 +166,16 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterFra
         });
     }
 
-    @Override
-    public void onSearchFilterClick(DialogFragment dialog) {
-        dialog.dismiss();
+    private void refreshArticleOffline(final String searchText) {
+
+        for (int i = 0; i < 20; i++) {
+            articles.add(Article.makeArticle("Lorem Ipsem lorem ipsem lorem ipsem " + i, "http://www.foo.com/", null));
+        }
     }
 
-    /*
     @Override
-    public void onSearchFilterClick(DialogFragment dialog) {
+    public void onSearchFilterClick(Parcelable p, DialogFragment dialog) {
+        searchFilter = Parcels.unwrap(p);
         dialog.dismiss();
     }
-    */
 }

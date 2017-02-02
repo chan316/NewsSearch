@@ -27,6 +27,17 @@ public class Article {
         }
     }
 
+    private Article (String headline, String webUrl, String thumbnail) {
+        this.headline = headline;
+        this.webUrl = webUrl;
+        this.thumbnail = thumbnail;
+    }
+
+    public static Article makeArticle(String headline, String webUrl, String thumbnail) {
+        return new Article(headline, webUrl, thumbnail);
+
+    }
+
     public String getWebUrl() {
         return webUrl;
     }

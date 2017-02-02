@@ -12,8 +12,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="etDate"
+        android:inputType="none"
+        android:text="select date"
         android:ems="10"
         android:id="@+id/etDate" />
 
@@ -34,15 +34,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView4" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:id="@+id/llTopics"
-        ></LinearLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/spCategory" />
 
     <Button
-        android:text="Button"
+        android:text="Save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnSaveFilter" />

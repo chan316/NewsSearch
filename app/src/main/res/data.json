@@ -1,0 +1,969 @@
+{
+	"response": {
+		"meta": {
+			"hits": 69029,
+			"time": 12,
+			"offset": 0
+		},
+		"docs": [
+			{
+				"web_url": "http://www.nytimes.com/2017/01/31/business/charleston-sc-titan-atlas-manufacturing.html",
+				"snippet": "The organization wants the State of South Carolina to limit its cleanup costs at an industrial site, but it may not be eligible for the program to which it applied....",
+				"lead_paragraph": "The organization wants the State of South Carolina to limit its cleanup costs at an industrial site, but it may not be eligible for the program to which it applied.",
+				"abstract": null,
+				"print_page": null,
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2017/02/01/business/01TITAN1/01TITAN1-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2017/02/01/business/01TITAN1/01TITAN1-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2017/02/01/business/01TITAN1/01TITAN1-articleLarge.jpg",
+						"height": 396,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2017/02/01/business/01TITAN1/01TITAN1-articleLarge.jpg",
+							"xlargeheight": "396"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2017/02/01/business/01TITAN1/01TITAN1-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2017/02/01/business/01TITAN1/01TITAN1-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "A Polluted Site, and a Potential Mess for the Trump Organization",
+					"print_headline": "Polluted Site Could Turn Into Mess For Trumps"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J Jr"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Eric F (1984- )"
+					},
+					{
+						"rank": "5",
+						"is_major": "N",
+						"name": "glocations",
+						"value": "South Carolina"
+					}
+				],
+				"pub_date": "2017-02-01T00:04:58+0000",
+				"document_type": "article",
+				"news_desk": "Business",
+				"section_name": "Business Day",
+				"subsection_name": null,
+				"byline": {
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Barry",
+							"rank": 1,
+							"lastname": "MEIER"
+						}
+					],
+					"original": "By BARRY MEIER"
+				},
+				"type_of_material": "News",
+				"_id": "5891263795d0e0392607ddd5",
+				"word_count": "611",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/interactive/2017/01/18/us/politics/trump-brand-before-after.html",
+				"snippet": "Over the last week, the Trump Organization and some of its marketing partners have been removing imagery of Mr. Trump and Ms. Trump from their websites....",
+				"lead_paragraph": "Over the last week, the Trump Organization and some of its marketing partners have been removing imagery of Mr. Trump and Ms. Trump from their websites.",
+				"abstract": null,
+				"print_page": null,
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2017/01/18/us/politics/trump-brand-before-after-1484770297026/trump-brand-before-after-1484770297026-thumbWide-v2.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2017/01/18/us/politics/trump-brand-before-after-1484770297026/trump-brand-before-after-1484770297026-thumbWide-v2.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2017/01/18/us/politics/trump-brand-before-after-1484770297026/trump-brand-before-after-1484770297026-articleLarge-v2.jpg",
+						"height": 400,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2017/01/18/us/politics/trump-brand-before-after-1484770297026/trump-brand-before-after-1484770297026-articleLarge-v2.jpg",
+							"xlargeheight": "400"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2017/01/18/us/politics/trump-brand-before-after-1484770297026/trump-brand-before-after-1484770297026-thumbStandard-v3.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2017/01/18/us/politics/trump-brand-before-after-1484770297026/trump-brand-before-after-1484770297026-thumbStandard-v3.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "Before and After: Removing Donald J. Trump From the Trump Brand"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Presidents and Presidency (US)"
+					}
+				],
+				"pub_date": "2017-01-18T20:31:17+0000",
+				"document_type": "multimedia",
+				"news_desk": "U.S. / Politics",
+				"section_name": "U.S.",
+				"subsection_name": "Politics",
+				"byline": {
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Karen",
+							"rank": 1,
+							"lastname": "YOURISH"
+						},
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Wilson",
+							"rank": 2,
+							"lastname": "ANDREWS"
+						}
+					],
+					"original": "By KAREN YOURISH and WILSON ANDREWS"
+				},
+				"type_of_material": "Interactive Feature",
+				"_id": "587fd09595d0e0392607b717",
+				"word_count": null,
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2017/01/19/us/politics/trump-international-hotel-ethics.html",
+				"snippet": "From the moment he is sworn in, the new president, Donald J. Trump, may be in violation of a lease with the federal government....",
+				"lead_paragraph": "From the moment he is sworn in, the new president, Donald J. Trump, may be in violation of a lease with the federal government.",
+				"abstract": null,
+				"print_page": "1",
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2017/01/20/us/20trumphotel-1/20trumphotel-2-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2017/01/20/us/20trumphotel-1/20trumphotel-2-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2017/01/20/us/20trumphotel-1/20trumphotel-2-articleLarge.jpg",
+						"height": 400,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2017/01/20/us/20trumphotel-1/20trumphotel-2-articleLarge.jpg",
+							"xlargeheight": "400"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2017/01/20/us/20trumphotel-1/20trumphotel-2-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2017/01/20/us/20trumphotel-1/20trumphotel-2-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "At Trump Hotel in Washington, Champagne Toasts in an Ethical ‘Minefield’",
+					"print_headline": "With an Oath, Complications  in a Hotel Deal"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "glocations",
+						"value": "Washington (DC)"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "5",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Organized Labor"
+					}
+				],
+				"pub_date": "2017-01-19T21:12:05+0000",
+				"document_type": "article",
+				"news_desk": "National",
+				"section_name": "U.S.",
+				"subsection_name": "Politics",
+				"byline": {
+					"contributor": "Steven Eder contributed reporting.",
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Eric",
+							"rank": 1,
+							"lastname": "LIPTON"
+						},
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Susanne",
+							"rank": 2,
+							"lastname": "CRAIG"
+						}
+					],
+					"original": "By ERIC LIPTON and SUSANNE CRAIG"
+				},
+				"type_of_material": "News",
+				"_id": "58812bb095d0e0392607bb55",
+				"word_count": "1862",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/interactive/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest.html",
+				"snippet": "",
+				"lead_paragraph": "",
+				"abstract": null,
+				"print_page": null,
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest-1484250657902/ethics-experts-trumps-conflicts-of-interest-1484250657902-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest-1484250657902/ethics-experts-trumps-conflicts-of-interest-1484250657902-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest-1484250657902/ethics-experts-trumps-conflicts-of-interest-1484250657902-articleLarge.jpg",
+						"height": 399,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest-1484250657902/ethics-experts-trumps-conflicts-of-interest-1484250657902-articleLarge.jpg",
+							"xlargeheight": "399"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest-1484250657902/ethics-experts-trumps-conflicts-of-interest-1484250657902-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2017/01/12/us/politics/ethics-experts-trumps-conflicts-of-interest-1484250657902/ethics-experts-trumps-conflicts-of-interest-1484250657902-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "It ‘Falls Short in Every Respect’: Ethics Experts Pan Trump’s Conflicts Plan"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					}
+				],
+				"pub_date": "2017-01-12T19:54:44+0000",
+				"document_type": "multimedia",
+				"news_desk": "U.S. / Politics",
+				"section_name": "U.S.",
+				"subsection_name": "Politics",
+				"byline": {
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Karen",
+							"rank": 1,
+							"lastname": "YOURISH"
+						},
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Larry",
+							"rank": 2,
+							"lastname": "BUCHANAN"
+						}
+					],
+					"original": "By KAREN YOURISH and LARRY BUCHANAN"
+				},
+				"type_of_material": "Interactive Feature",
+				"_id": "5877df0395d0e0392607a65b",
+				"word_count": null,
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2017/01/18/us/politics/ivanka-trump-conflict-of-interest.html",
+				"snippet": "The Trump Organization is pulling back on its promotion of the president-elect and his daughter Ivanka as the business takes steps to avoid conflicts of interest....",
+				"lead_paragraph": "The Trump Organization is pulling back on its promotion of the president-elect and his daughter Ivanka as the business takes steps to avoid conflicts of interest.",
+				"abstract": null,
+				"print_page": "16",
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [],
+				"headline": {
+					"main": "As Trump Heads to White House, His Face Recedes From Other Properties",
+					"print_headline": "As Trump Nears White House, His Face Fades From Other Properties"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Ivanka"
+					}
+				],
+				"pub_date": "2017-01-19T01:51:53+0000",
+				"document_type": "article",
+				"news_desk": "National",
+				"section_name": "U.S.",
+				"subsection_name": "Politics",
+				"byline": {
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Maggie",
+							"rank": 1,
+							"lastname": "HABERMAN"
+						},
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Eric",
+							"rank": 2,
+							"lastname": "LIPTON"
+						}
+					],
+					"original": "By MAGGIE HABERMAN and ERIC LIPTON"
+				},
+				"type_of_material": "News",
+				"_id": "58801bc095d0e0392607b81e",
+				"word_count": "684",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2017/01/30/us/trump-hotels-tweet-refugees.html",
+				"snippet": "A more than five-year-old Twitter message from the president’s hospitality company got new life over the weekend as users shared their family’s refugee stories....",
+				"lead_paragraph": "A more than five-year-old Twitter message from the president’s hospitality company got new life over the weekend as users shared their family’s refugee stories.",
+				"abstract": null,
+				"print_page": null,
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2017/01/30/us/31TRUMPTWEET/31TRUMPTWEET-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2017/01/30/us/31TRUMPTWEET/31TRUMPTWEET-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2017/01/30/us/31TRUMPTWEET/31TRUMPTWEET-articleLarge.jpg",
+						"height": 400,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2017/01/30/us/31TRUMPTWEET/31TRUMPTWEET-articleLarge.jpg",
+							"xlargeheight": "400"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2017/01/30/us/31TRUMPTWEET/31TRUMPTWEET-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2017/01/30/us/31TRUMPTWEET/31TRUMPTWEET-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "Trump Hotels’ Tweet Draws Backlash After Immigration Order"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Immigration and Emigration"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Demonstrations, Protests and Riots"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Hotels"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					}
+				],
+				"pub_date": "2017-01-30T18:18:12+0000",
+				"document_type": "article",
+				"news_desk": "National",
+				"section_name": "U.S.",
+				"subsection_name": null,
+				"byline": {
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Joe",
+							"rank": 1,
+							"lastname": "COSCARELLI"
+						}
+					],
+					"original": "By JOE COSCARELLI"
+				},
+				"type_of_material": "News",
+				"_id": "588f836e95d0e0392607d992",
+				"word_count": "636",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2016/12/30/opinion/addressing-the-trump-conflict-issues.html",
+				"snippet": "Laurence Tribe and Mark Green are among those urging the Trump family to divest to avoid the potential for corruption....",
+				"lead_paragraph": "Laurence Tribe and Mark Green are among those urging the Trump family to divest to avoid the potential for corruption.",
+				"abstract": null,
+				"print_page": "22",
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [],
+				"headline": {
+					"main": "Addressing the Trump Conflict Issues",
+					"content_kicker": "Letters",
+					"kicker": "Letters",
+					"print_headline": "Addressing the Trump Conflict Issues"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					}
+				],
+				"pub_date": "2016-12-30T18:49:26+0000",
+				"document_type": "article",
+				"news_desk": "Letters",
+				"section_name": "Opinion",
+				"subsection_name": null,
+				"byline": [],
+				"type_of_material": "Letter",
+				"_id": "5866ac3995d0e03926078631",
+				"word_count": "686",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2016/12/14/world/americas/donald-trump-hotel-rio-brazil-investigation.html",
+				"snippet": "The hotel and another Trump venture in the city had been named in a federal investigation over investments by public pension fund managers in commercial projects....",
+				"lead_paragraph": "The hotel and another Trump venture in the city had been named in a federal investigation over investments by public pension fund managers in commercial projects.",
+				"abstract": null,
+				"print_page": "16",
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2016/12/15/world/15Trumpbrazil1/15Trumpbrazil1-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2016/12/15/world/15Trumpbrazil1/15Trumpbrazil1-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2016/12/15/world/15Trumpbrazil1/15Trumpbrazil1-articleLarge.jpg",
+						"height": 400,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2016/12/15/world/15Trumpbrazil1/15Trumpbrazil1-articleLarge.jpg",
+							"xlargeheight": "400"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2016/12/15/world/15Trumpbrazil1/15Trumpbrazil1-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2016/12/15/world/15Trumpbrazil1/15Trumpbrazil1-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "Trump Firm Quits Brazil Hotel Project That Was Named in Criminal Inquiry",
+					"print_headline": "Trump Firm Quits Brazil Hotel Project Cited in Criminal Inquiry"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Hotels"
+					},
+					{
+						"rank": "2",
+						"is_major": "Y",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "3",
+						"is_major": "Y",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Figueiredo Filho, Paulo"
+					},
+					{
+						"rank": "5",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Real Estate (Commercial)"
+					},
+					{
+						"rank": "6",
+						"is_major": "Y",
+						"name": "glocations",
+						"value": "Brazil"
+					},
+					{
+						"rank": "7",
+						"is_major": "Y",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					}
+				],
+				"pub_date": "2016-12-14T16:20:53+0000",
+				"document_type": "article",
+				"news_desk": "National",
+				"section_name": "World",
+				"subsection_name": "Americas",
+				"byline": {
+					"contributor": "Eric Lipton contributed reporting from Washington.",
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Simon",
+							"rank": 1,
+							"lastname": "ROMERO"
+						}
+					],
+					"original": "By SIMON ROMERO"
+				},
+				"type_of_material": "News",
+				"_id": "5851717295d0e03926075f54",
+				"word_count": "969",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2017/01/02/us/politics/donald-trump-dubai-conflict-of-interest.html",
+				"snippet": "Conflict-of-interest questions arose after a party at which Mr. Trump praised Hussain Sajwani, whose company has built several properties bearing the Trump name....",
+				"lead_paragraph": "Conflict-of-interest questions arose after a party at which Mr. Trump praised Hussain Sajwani, whose company has built several properties bearing the Trump name.",
+				"abstract": null,
+				"print_page": null,
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2017/01/03/us/03trumpdubai/03trumpdubai-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2017/01/03/us/03trumpdubai/03trumpdubai-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2017/01/03/us/03trumpdubai/03trumpdubai-articleLarge.jpg",
+						"height": 400,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2017/01/03/us/03trumpdubai/03trumpdubai-articleLarge.jpg",
+							"xlargeheight": "400"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2017/01/03/us/03trumpdubai/03trumpdubai-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2017/01/03/us/03trumpdubai/03trumpdubai-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "Video Puts New Focus on Donald Trump’s Ties to Dubai Partner"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Sajwani, Hussain"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					},
+					{
+						"rank": "5",
+						"is_major": "N",
+						"name": "glocations",
+						"value": "Dubai (United Arab Emirates)"
+					},
+					{
+						"rank": "6",
+						"is_major": "N",
+						"name": "subject",
+						"value": "United States Politics and Government"
+					}
+				],
+				"pub_date": "2017-01-03T04:59:58+0000",
+				"document_type": "article",
+				"news_desk": "National",
+				"section_name": "U.S.",
+				"subsection_name": "Politics",
+				"byline": {
+					"person": [
+						{
+							"firstname": "Julie",
+							"middlename": "Hirschfeld",
+							"lastname": "DAVIS",
+							"rank": 1,
+							"role": "reported",
+							"organization": ""
+						}
+					],
+					"original": "By JULIE HIRSCHFELD DAVIS"
+				},
+				"type_of_material": "News",
+				"_id": "586b2fd295d0e03926078b24",
+				"word_count": "683",
+				"slideshow_credits": null
+			},
+			{
+				"web_url": "http://www.nytimes.com/2016/12/24/us/politics/trump-family-conflicts.html",
+				"snippet": "Mr. Trump has agreed to shut his charity, weighed a plan for an outside monitor to oversee the Trump Organization and ended some international business projects....",
+				"lead_paragraph": "Mr. Trump has agreed to shut his charity, weighed a plan for an outside monitor to oversee the Trump Organization and ended some international business projects.",
+				"abstract": null,
+				"print_page": "1",
+				"blog": [],
+				"source": "The New York Times",
+				"multimedia": [
+					{
+						"width": 190,
+						"url": "images/2016/12/25/us/25DECON-01/25DECON-01-thumbWide.jpg",
+						"height": 126,
+						"subtype": "wide",
+						"legacy": {
+							"wide": "images/2016/12/25/us/25DECON-01/25DECON-01-thumbWide.jpg",
+							"wideheight": "126",
+							"widewidth": "190"
+						},
+						"type": "image"
+					},
+					{
+						"width": 600,
+						"url": "images/2016/12/25/us/25DECON-01/25DECON-01-articleLarge.jpg",
+						"height": 455,
+						"subtype": "xlarge",
+						"legacy": {
+							"xlargewidth": "600",
+							"xlarge": "images/2016/12/25/us/25DECON-01/25DECON-01-articleLarge.jpg",
+							"xlargeheight": "455"
+						},
+						"type": "image"
+					},
+					{
+						"width": 75,
+						"url": "images/2016/12/25/us/25DECON-01/25DECON-01-thumbStandard.jpg",
+						"height": 75,
+						"subtype": "thumbnail",
+						"legacy": {
+							"thumbnailheight": "75",
+							"thumbnail": "images/2016/12/25/us/25DECON-01/25DECON-01-thumbStandard.jpg",
+							"thumbnailwidth": "75"
+						},
+						"type": "image"
+					}
+				],
+				"headline": {
+					"main": "Denying Conflict, Trump Family Tries to Resolve Potential Problems",
+					"print_headline": "Trumps Hurry to Unscramble Business Ties"
+				},
+				"keywords": [
+					{
+						"rank": "1",
+						"is_major": "N",
+						"name": "persons",
+						"value": "Trump, Donald J"
+					},
+					{
+						"rank": "2",
+						"is_major": "N",
+						"name": "subject",
+						"value": "United States Politics and Government"
+					},
+					{
+						"rank": "3",
+						"is_major": "N",
+						"name": "subject",
+						"value": "Conflicts of Interest"
+					},
+					{
+						"rank": "4",
+						"is_major": "N",
+						"name": "organizations",
+						"value": "Trump Organization"
+					}
+				],
+				"pub_date": "2016-12-24T17:20:41+0000",
+				"document_type": "article",
+				"news_desk": "National",
+				"section_name": "U.S.",
+				"subsection_name": "Politics",
+				"byline": {
+					"contributor": "<em>Eric Lipton reported from Washington, and Maggie Haberman from New York. Steve Eder contributed reporting from New York, and Ellen Barry from New Delhi.</em>",
+					"person": [
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Eric",
+							"rank": 1,
+							"lastname": "LIPTON"
+						},
+						{
+							"organization": "",
+							"role": "reported",
+							"firstname": "Maggie",
+							"rank": 2,
+							"lastname": "HABERMAN"
+						}
+					],
+					"original": "By ERIC LIPTON and MAGGIE HABERMAN"
+				},
+				"type_of_material": "News",
+				"_id": "585eae6f95d0e03926077b1c",
+				"word_count": "1692",
+				"slideshow_credits": null
+			}
+		]
+	},
+	"status": "OK",
+	"copyright": "Copyright (c) 2013 The New York Times Company.  All Rights Reserved."
+}
