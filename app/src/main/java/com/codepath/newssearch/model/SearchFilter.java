@@ -12,16 +12,18 @@ public class SearchFilter {
     String date = "";
     String sort = "";
     String category = "";
+    int page = 0;
 
     public SearchFilter() {
 
     }
 
-    public SearchFilter(String query, String date, String sort, String category) {
+    public SearchFilter(String query, String date, String sort, String category, int page) {
         this.query = query;
         this.date = date;
         this.sort = sort;
         this.category = category;
+        this.page = page;
     }
 
     public String getQuery() {
@@ -40,6 +42,8 @@ public class SearchFilter {
         return this.category;
     }
 
+    public int getPage() { return this.page; }
+
     public void setQuery(String query) {
         this.query = query;
     }
@@ -56,10 +60,13 @@ public class SearchFilter {
         this.category = category;
     }
 
+    public void setPage(int page) { this.page = page; }
+
     public void reset() {
         this.query = "";
         this.date = "";
         this.sort = "";
         this.category = "";
+        this.page = 0;
     }
 }

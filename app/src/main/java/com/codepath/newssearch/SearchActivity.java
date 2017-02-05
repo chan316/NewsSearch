@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -44,7 +45,8 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
 
     private SearchFilter searchFilter;
 
-    final boolean HAS_NETWORK = false;
+    // TODO implement offline
+    final boolean HAS_NETWORK = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,9 +93,9 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
                 setQuery(query);
 
                 if (HAS_NETWORK) {
-                    refreshArticle(query);
+                    refreshArticle();
                 } else {
-                    refreshArticleOffline(query);
+                    refreshArticleOffline();
                 }
                 // workaround to avoid issues with some emulators and keyboard devices firing twice if a keyboard enter is used
                 // see https://code.google.com/p/android/issues/detail?id=24599
@@ -132,13 +134,30 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
 
     }
 
-    private void refreshArticle(final String searchText) {
+    private void refreshArticle() {
         AsyncHttpClient client = new AsyncHttpClient();
 
         RequestParams params = new RequestParams();
         params.put("api-key", "88c5c0da90b64cca8bb6503b8c70567c");
-        params.put("page", 0);
-        params.put("q", searchText);
+        params.put("page", searchFilter.getPage());
+
+        if (searchFilter.getQuery() != null && !searchFilter.getQuery().isEmpty()) {
+            params.put("q", searchFilter.getQuery());
+        }
+
+        if (searchFilter.getDate() != null && !searchFilter.getDate().isEmpty()) {
+            params.put("begin_date", searchFilter.getDate());
+        }
+
+        if (searchFilter.getSort() != null && !searchFilter.getSort().isEmpty() && searchFilter.getSort() != "none") {
+            params.put("sort", searchFilter.getSort());
+        }
+
+        if (searchFilter.getCategory() != null && !searchFilter.getCategory().isEmpty() && searchFilter.getCategory() != "none") {
+            params.put("fq", searchFilter.getCategory());
+        }
+
+        Toast.makeText(SearchActivity.this, "Articles failed: " + client.getHttpClient().getParams(), Toast.LENGTH_SHORT);
 
         client.get(URL, params, new JsonHttpResponseHandler() {
             @Override
@@ -148,6 +167,7 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
                     JSONArray docsArray = response.getJSONObject("response").getJSONArray("docs");
                     articles.addAll(Article.fromJSONArray(docsArray));
                     adapter.notifyDataSetChanged();
+                    Toast.makeText(SearchActivity.this, headers.toString(), Toast.LENGTH_SHORT);
 
                 }
                 catch (JSONException e) {
@@ -160,13 +180,17 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
 
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                Toast.makeText(SearchActivity.this, "Failure for: " + getQuery(), Toast.LENGTH_SHORT);
                 super.onFailure(statusCode, headers, responseString, throwable);
+                Log.d("Failed: ", ""+statusCode);
+                Log.d("Error: ", "" + throwable);
+                Toast.makeText(SearchActivity.this, "Articles failed: " + articles.size(), Toast.LENGTH_SHORT);
+
             }
+
         });
     }
 
-    private void refreshArticleOffline(final String searchText) {
+    private void refreshArticleOffline() {
 
         for (int i = 0; i < 20; i++) {
             articles.add(Article.makeArticle("Lorem Ipsem lorem ipsem lorem ipsem " + i, "http://www.foo.com/", null));

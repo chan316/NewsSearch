@@ -125,8 +125,9 @@ public class SearchFilterDialogFragment extends DialogFragment implements Adapte
                 String date = !etDate.getText().toString().isEmpty() ? etDate.getText().toString() : null;
                 String sort = spSort.getSelectedItemPosition() > 0 ? spSort.getSelectedItem().toString() : null;
                 String category = spCategory.getSelectedItemPosition() > 0 ? spCategory.getSelectedItem().toString() : null;
+                int page = searchFilter.getPage();
 
-                Parcelable wrapped = Parcels.wrap(new SearchFilter(searchFilter.getQuery(), date, sort, category));
+                Parcelable wrapped = Parcels.wrap(new SearchFilter(searchFilter.getQuery(), date, sort, category, page));
                 mListener.onSearchFilterClick(wrapped, SearchFilterDialogFragment.this);
             }
 
@@ -148,7 +149,11 @@ public class SearchFilterDialogFragment extends DialogFragment implements Adapte
 
     public void showDatePickerDialog(View v) {
 
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("searchFilter", Parcels.wrap(searchFilter));
+
         DateDialogFragment newFragment = new DateDialogFragment();
+        newFragment.setArguments(bundle);
         newFragment.setTargetFragment(this, 300);
         newFragment.show(getFragmentManager(), "datePicker");
     }
@@ -161,7 +166,9 @@ public class SearchFilterDialogFragment extends DialogFragment implements Adapte
         c.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+
         String urlDate = format.format(c.getTime());
         etDate.setText(urlDate);
+        searchFilter.setDate(urlDate);
     }
 }
