@@ -41,13 +41,13 @@ public class Article {
     public String getWebUrl() {
         return webUrl;
     }
-
     public String getThumbnail() {
         return thumbnail;
     }
     public String getHeadline() {
         return headline;
     }
+
     public static List<Article> fromJSONArray(JSONArray responseArray) {
         List<Article> articles = new ArrayList<>();
         for (int i = 0; i < responseArray.length(); i++){

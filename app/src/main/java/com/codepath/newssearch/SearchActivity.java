@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -157,8 +156,6 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
             params.put("fq", searchFilter.getCategory());
         }
 
-        Toast.makeText(SearchActivity.this, "Articles failed: " + client.getHttpClient().getParams(), Toast.LENGTH_SHORT);
-
         client.get(URL, params, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
@@ -181,8 +178,7 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 super.onFailure(statusCode, headers, responseString, throwable);
-                Log.d("Failed: ", ""+statusCode);
-                Log.d("Error: ", "" + throwable);
+
                 Toast.makeText(SearchActivity.this, "Articles failed: " + articles.size(), Toast.LENGTH_SHORT);
 
             }
