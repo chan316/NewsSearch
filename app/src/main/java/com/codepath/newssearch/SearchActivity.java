@@ -41,6 +41,7 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
     private List<Article> articles;
     private RecyclerView rwArticleGrid;
     private RecyclerView.Adapter adapter;
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     private SearchFilter searchFilter;
 
@@ -63,6 +64,13 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
         rwArticleGrid.setLayoutManager(grid);
         rwArticleGrid.setAdapter(adapter);
 
+        scrollListener = new EndlessRecyclerViewScrollListener(grid) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                refreshArticle(page);
+            }
+        };
+        rwArticleGrid.addOnScrollListener(scrollListener);
     }
 
     private void setQuery(String query) {
@@ -93,7 +101,10 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
                 setQuery(query);
 
                 if (HAS_NETWORK) {
-                    refreshArticle();
+                    articles.clear();
+                    refreshArticle(0);
+                    adapter.notifyDataSetChanged();
+                    scrollListener.resetState();
                 } else {
                     refreshArticleOffline();
                 }
@@ -134,12 +145,12 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
 
     }
 
-    private void refreshArticle() {
+    private void refreshArticle(final int page) {
         AsyncHttpClient client = new AsyncHttpClient();
 
         RequestParams params = new RequestParams();
         params.put("api-key", "88c5c0da90b64cca8bb6503b8c70567c");
-        params.put("page", searchFilter.getPage());
+        params.put("page", page);
 
         if (searchFilter.getQuery() != null && !searchFilter.getQuery().isEmpty()) {
             params.put("q", searchFilter.getQuery());
@@ -161,10 +172,9 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try {
-                    articles.clear();
                     JSONArray docsArray = response.getJSONObject("response").getJSONArray("docs");
                     articles.addAll(Article.fromJSONArray(docsArray));
-                    adapter.notifyDataSetChanged();
+                    adapter.notifyItemRangeInserted(page * 10, 10);
                     Toast.makeText(SearchActivity.this, headers.toString(), Toast.LENGTH_SHORT);
 
                 }
