@@ -6,9 +6,9 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -60,7 +60,8 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
         articles = new ArrayList<>();
         adapter = new ArticleAdapter(this, articles);
 
-        GridLayoutManager grid = new GridLayoutManager(this, NUM_COLUMNS);
+        StaggeredGridLayoutManager grid = new StaggeredGridLayoutManager(NUM_COLUMNS, StaggeredGridLayoutManager.VERTICAL);
+        //GridLayoutManager grid = new GridLayoutManager(this, NUM_COLUMNS);
         rwArticleGrid.setLayoutManager(grid);
         rwArticleGrid.setAdapter(adapter);
 

@@ -125,9 +125,8 @@ public class SearchFilterDialogFragment extends DialogFragment implements Adapte
                 String date = !etDate.getText().toString().isEmpty() ? etDate.getText().toString() : null;
                 String sort = spSort.getSelectedItemPosition() > 0 ? spSort.getSelectedItem().toString() : null;
                 String category = spCategory.getSelectedItemPosition() > 0 ? spCategory.getSelectedItem().toString() : null;
-                int page = searchFilter.getPage();
 
-                Parcelable wrapped = Parcels.wrap(new SearchFilter(searchFilter.getQuery(), date, sort, category, page));
+                Parcelable wrapped = Parcels.wrap(new SearchFilter(searchFilter.getQuery(), date, sort, category));
                 mListener.onSearchFilterClick(wrapped, SearchFilterDialogFragment.this);
             }
 

@@ -101,9 +101,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
                 builder.addDefaultShareMenuItem();
 
                 CustomTabsIntent customTabsIntent = builder.build();
-                customTabsIntent.launchUrl((Activity) getContext(), Uri.parse("https://www.yahoo.com"));
-
-                //customTabsIntent.launchUrl((Activity) getContext(), Uri.parse(currentArticle.getWebUrl()));
+                customTabsIntent.launchUrl((Activity) getContext(), Uri.parse(currentArticle.getWebUrl()));
 
             }
         }
