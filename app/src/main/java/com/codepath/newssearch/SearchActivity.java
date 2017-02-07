@@ -46,6 +46,7 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
 
     // TODO implement offline
     final boolean HAS_NETWORK = true;
+    final int NUM_COLUMNS = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +59,7 @@ public class SearchActivity extends AppCompatActivity implements SearchFilterDia
         articles = new ArrayList<>();
         adapter = new ArticleAdapter(this, articles);
 
-        GridLayoutManager grid = new GridLayoutManager(this, 3);
+        GridLayoutManager grid = new GridLayoutManager(this, NUM_COLUMNS);
         rwArticleGrid.setLayoutManager(grid);
         rwArticleGrid.setAdapter(adapter);
 
